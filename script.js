@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const card = document.querySelector('.hero__card');
-    const text = document.querySelector('.hero__text');
+    const card = document.querySelector('.hero-card');
+    const text = document.querySelector('.hero-text');
 
     card.classList.add('show');
     text.classList.add('show');
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const aboutContainer = document.querySelector(".about__container");
+    const aboutContainer = document.querySelector(".about-container");
 
     const options = {
         root: null,
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const appointmentItems = document.querySelector(".appointment__itens");
+    const appointmentItems = document.querySelector(".appointment-itens");
 
     const options = {
         root: null,
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var items = document.querySelectorAll('.services__itens div');
+    var items = document.querySelectorAll('.services-itens div');
 
     function isInViewport(element) {
         var rect = element.getBoundingClientRect();
@@ -82,6 +82,32 @@ document.querySelector('.scroll-down-arrow').addEventListener('click', function(
     window.scroll({
         top: offset,
         behavior: 'smooth'
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.getElementById('overlay');
+    const closeButton = document.getElementById('close-button');
+
+    mobileMenu.addEventListener('click', function () {
+        document.body.classList.toggle('mobile-menu-open');
+    });
+
+    overlay.addEventListener('click', function () {
+        document.body.classList.remove('mobile-menu-open');
+    });
+
+    closeButton.addEventListener('click', function () {
+        document.body.classList.remove('mobile-menu-open');
+    });
+
+    // Feche o menu ao clicar em um link do menu
+    const navLinks = document.querySelectorAll('.nav-list a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            document.body.classList.remove('mobile-menu-open');
+        });
     });
 });
 

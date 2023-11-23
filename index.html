@@ -14,10 +14,15 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="nav">
             <a><span>Millena Bastos</span> / Psicóloga</a>
-            <ul class="nav__list">
+            
+            <div class="close-button" id="close-button">
+                <span>&times;</span>
+            </div>
+            <ul class="nav-list">
                 <li>
                     <a href="#home">HOME</a>
                 </li>
@@ -38,42 +43,42 @@
                 </i>
             </div>
         </nav>
+        <div class="overlay" id="overlay"></div>
     </header>
 
     <main>
-        <div class="hero__container" id="home">
+        <div class="hero-container" id="home">
             <article class="hero">
-                <div class="hero__card">
+                <div class="hero-card">
                     <img src="/assets/personal_img.png" alt="" srcset="">
                     <h1>Millena Bastos</h1>
                     <div class="separator"></div>
                     <p>Psicóloga</p>
                 </div>
-                <div class="hero__text">
+                <div class="hero-text">
                     <h1>Olá,</h1>
                     <h2>Eu sou Millena.</h2>
                     <p>Seja a mudança que você busca. Na jornada da autoexploração, cada consulta é um passo em direção
                         ao equilíbrio emocional.</p>
                     <div>
                         <a href="https://wa.me/5521964682147">
-                            <button class="contact">Contato</button>
+                            <button class="hero-contact-button">Contato</button>
                         </a>
                     </div>
                 </div>
             </article>
-
+        
             <div class="scroll-down-arrow">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-        </div>
-        <div class="about__container" id="about">
-            <div class="about__img">
+        </div>        
+        <div class="about-container" id="about">
+            <div class="about-img">
                 <img src="assets/about_image.png" alt="" srcset="">
             </div>
-            <div class="about__text">
+            <div class="about-text">
                 <h3>Quem sou eu?</h3>
                 <h2>Millena Bastos</h2>
                 <p>Psicóloga (CRP 00/00000)</p>
@@ -83,9 +88,9 @@
                     abordagem da Terapia Cognitiva Comportamental.</p>
             </div>
         </div>
-        <div class="services__container" id="services">
+        <div class="services-container" id="services">
             <h1>O que posso oferecer</h1>
-            <div class="services__itens">
+            <div class="services-itens">
                 <div>
                     <img src="assets/brain.svg" alt="" srcset="">
                     <h3>TERAPIA COGNITIVA-COMPORTAMENTAL</h3>
@@ -105,8 +110,8 @@
                 </div>
             </div>
         </div>
-        <div class="appointment" id="contact">
-            <div class="appointment__itens">
+        <div class="appointment-container" id="contact">
+            <div class="appointment-itens">
                 <h3>Sessões pelo Zoom ou Google Meet.</h3>
                 <p>Você pode escolher entre as principais ferramentas de videochamada disponíveis como Whatsapp, Google
                     Meet ou Zoom para o seu atendimento.</p>
@@ -115,7 +120,7 @@
                 </a>
             </div>
         </div>
-        <div class="warn__container">
+        <div class="warn-container">
             <h2>Em caso de crise ligue para o CVV (Centro de Valorização da Vida) - 188</h2>
         </div>
     </main>
