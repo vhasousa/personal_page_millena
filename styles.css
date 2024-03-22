@@ -294,6 +294,7 @@ body, input, textarea, button {
         color: #2C4036;
         text-align: center;
         position: relative;
+        font-weight:400;
     }
 
     .services-container h1::after {
@@ -691,6 +692,7 @@ body, input, textarea, button {
         color: #2C4036;
         text-align: center;
         position: relative;
+        font-weight: 400;
     }
 
     .services-container h1::after {
