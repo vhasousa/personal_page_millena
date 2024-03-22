@@ -282,6 +282,7 @@ body, input, textarea, button {
         font-family: Pacifico;
         font-size: 2rem;
         color: #58806B;
+        font-weight: 400;
     }
     
     .services-container {
@@ -680,6 +681,7 @@ body, input, textarea, button {
         font-family: Pacifico;
         font-size: 2rem;
         color: #58806B;
+        font-weight: 400;
     }
 
     .services-container {
